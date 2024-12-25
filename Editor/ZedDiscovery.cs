@@ -20,6 +20,12 @@ namespace UnityZed
 
                 // [Linux] (Flatpak)
                 ("/var/lib/flatpak/app/dev.zed.Zed/current/active/files/bin/zed", null),
+
+                // [Linux] (Repo) 
+                ("/usr/bin/zeditor", null),
+
+                // [Linux] (Official Website)
+                (NPath.HomeDirectory.Combine(".local/bin/zed"), null),
             };
 
             foreach (var candidate in candidates)
